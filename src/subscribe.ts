@@ -23,6 +23,7 @@ const app = () => {
     const date = new Date();
 
     const text = `time: ${date} BlockNumber: ${blockNumber} GasLimit: ${gasLimit} GasUsed: ${gasUsed} BaseFee: ${baseFee}`;
+    console.log(text + '\n');
 
     fs.appendFile('logs.txt', text + '\n', (err) => {
       if (err) throw err;
